@@ -1,0 +1,174 @@
+body{
+  margin:0;
+  text-align:center;
+  height: 100vh;
+  width: 100%;
+  min-width: 200px;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom right, #534666, #cd7672);
+  background-size: cover;
+  background-repeat:round;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.container{
+
+margin: auto;
+width: 80%;
+min-width: 200px;
+}
+
+h1, .counter{
+  font-family: 'Sigmar One', cursive;
+  color:#F2E94E;
+  margin-bottom: 30px;
+}
+
+h1{
+  font-weight:900;
+  font-size: 3rem;
+}
+
+.outer-circle{
+  position:relative;
+  width: 60vh;
+  height: 60vh;
+  margin:auto auto;
+  border-radius: 50%;
+  background-color: #7E6B8F;
+  text-align:center;
+  border: 15px solid black;
+
+
+
+}
+.key{
+
+  width:50%;
+  height: 50%;
+  border-top-right-radius:0;
+  border-top-left-radius:0;
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:100%;
+  position: absolute;
+  border:none;
+  border-top: 4px solid black;
+  border-right:4px solid black;
+}
+
+.button1{
+  background-color:#96E6B3;
+  bottom: 0;
+  left:0;
+
+
+}
+
+.button2{
+  background-color:#DA3E52;
+  transform: rotate(180deg);
+  top:0;
+  right:0;
+}
+.button3{
+  background-color:#A3D9FF;
+  transform: rotate(-90deg);
+  bottom:0;
+  right:0;
+}
+
+.button4{
+  background-color:#F2E94E;
+    transform: rotate(90deg);
+      top:0;
+      left:0;
+
+}
+
+.counter{
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  border: black 5px solid;
+  position: absolute;
+  margin: auto;
+  top:25%;
+  right: 25%;
+  z-index: 1;
+  font-size: 2rem;
+  background: #ca6d68;
+}
+.fade-out{
+  opacity:0.2;
+  border:lightgrey;
+
+}
+.pressed {
+  border: 3px lightgrey solid;
+}
+
+.wrong{
+  background:red;
+
+}
+
+
+/* @media screen and (max-width: 974px) {
+  h1{
+    font-size: 2.5rem;
+  }
+} */
+
+@media screen and (min-width:728px) and (max-width: 1025px){
+  h1{
+    font-size: 2.5rem;
+  }
+  .container{
+    margin-top: 10%;
+  }
+  .outer-circle{
+    width:45vh;
+    height: 45vh;
+    margin-top: 20%;
+  }
+
+}
+
+@media screen and (max-width: 729px){
+  h1{
+    font-size: 1.39rem;
+  }
+
+  .container{
+    margin-top: 20%;
+  }
+  .outer-circle{
+    width:33vh;
+    height: 33vh;
+  }
+  .counter{
+    font-size: 1.25rem;
+  }
+
+}
+
+
+
+/* @media screen and (min-width: 361px)and (max-width: 540px){
+  h1{
+    font-size: 2rem;
+  }
+
+  .container{
+    margin-top: 20%;
+  }
+  .outer-circle{
+    width:35vh;
+    height: 35vh;
+  }
+  .counter{
+    font-size: 1.25rem;
+  }
+
+} */
